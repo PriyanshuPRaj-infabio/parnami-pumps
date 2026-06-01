@@ -35,8 +35,8 @@ const services = [
   ["01", "Industrial Plumbing", "Complete industrial plumbing systems designed for operational efficiency and long-term reliability.", "/assets/services/industrial-plumbing(HD).png"],
   ["02", "Industrial Piping", "High-performance piping solutions engineered for industrial environments and critical infrastructure.", "/assets/services/industrial-piping.jpg"],
   ["03", "Piping Projects", "End-to-end project execution including planning, fabrication, installation, testing, and commissioning.", "/assets/pipingwork.png"],
-  ["04", "Fire Hydrant Systems", "Advanced fire protection infrastructure designed to meet safety and compliance standards.", "/assets/services/fire fighting system.jpg"],
-  ["05", "Water Management Systems", "Solutions focused on efficient water distribution, conservation, and operational sustainability.", "/assets/services/rain water harvesting.jpg"],
+  ["04", "Fire Hydrant Systems", "Advanced fire protection infrastructure designed to meet safety and compliance standards.", "/assets/services/fire_fighting_system.jpg"],
+  ["05", "Water Management Systems", "Solutions focused on efficient water distribution, conservation, and operational sustainability.", "/assets/services/rain_water_harvesting.jpg"],
   ["06", "Fabrication & Engineering Support", "Precision fabrication capabilities supporting industrial and infrastructure projects.", "/assets/bluepipes.png"],
 ];
 
@@ -54,8 +54,8 @@ const capabilities = [
 const projectScenes = [
   ["01", "Automotive", "Industrial Facilities", "/assets/services/industrial-piping.jpg"],
   ["02", "Manufacturing", "Mechanical Piping Networks", "/assets/pipingwork.png"],
-  ["03", "Infrastructure", "Fire Fighting Infrastructure", "/assets/services/fire fighting system.jpg"],
-  ["04", "Water Management", "Water Supply Schemes", "/assets/services/rain water harvesting.jpg"],
+  ["03", "Infrastructure", "Fire Fighting Infrastructure", "/assets/services/fire_fighting_system.jpg"],
+  ["04", "Water Management", "Water Supply Schemes", "/assets/services/rain_water_harvesting.jpg"],
 ];
 
 const clients = [
@@ -558,7 +558,7 @@ export default function Home() {
                 aria-label="GoCommercially"
               >
                 <img
-                  src="/go_tm logo white.png"
+                  src="/go_tm_logo_white.png"
                   alt="GoCommercially"
                   className="credits-logo"
                 />
