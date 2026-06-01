@@ -1,0 +1,323 @@
+PARNAMI PUMP & PROJECT PVT. LTD. WEBSITE CONTENT & CONTENT IMPLEMENTATION GUIDE
+==================================================== PROJECT OVERVIEW
+====================================================
+Website Goal:
+Transform Parnami Pump from an outdated industrial services website into a premium engineering and
+infrastructure experience platform.
+The website should communicate:
+• Engineering Excellence
+• Industrial Scale
+• Infrastructure Expertise
+• Water Management
+• Trust
+• Precision
+• Technical Capability
+• Legacy
+• Large Project Execution
+The experience should feel closer to:
+• Larsen & Toubro
+• Grundfos
+• Tata Projects
+• ABB
+• Siemens
+• Fluor
+• Honeywell Industrial
+NOT like:
+• Traditional contractor website
+• Generic construction company
+• Local plumbing service website
+==================================================== BRAND POSITIONING
+====================================================
+HEADLINE:
+Engineering Water Infrastructure Since 1984
+SUBHEADING:
+Delivering industrial plumbing, piping systems, fire protection infrastructure, water management
+solutions, and large-scale engineering projects across India.
+
+1
+
+BRAND DESCRIPTION:
+Parnami Pump & Project Pvt. Ltd. is a trusted engineering company specializing in industrial plumbing,
+industrial piping, fire hydrant systems, water infrastructure, fabrication, and turnkey project execution
+for leading industries and institutions.
+With decades of experience and a commitment to quality, we help build the critical systems that power
+industries, manufacturing facilities, commercial developments, and infrastructure projects.
+==================================================== SECTION 01 HERO SCROLL EXPERIENCE
+====================================================
+SECTION TYPE: Three.js Scroll Canvas
+IMPORTANT:
+Replace luxury bathroom storytelling.
+Create industrial engineering storytelling.
+Hero sequence progression:
+1. Water Source
+2. Pump Systems
+3. Industrial Pipelines
+4. Fire Hydrant Systems
+5. Water Distribution Networks
+6. Industrial Facilities
+7. Large Infrastructure Projects
+VISUAL LANGUAGE:
+• Water flow
+• Steel
+• Pipes
+• Pressure systems
+• Engineering drawings
+• Industrial architecture
+• Technical precision
+• Infrastructure scale
+HEADLINE:
+Engineering The Flow Behind Modern Infrastructure
+SUBHEADING:
+Industrial Plumbing, Piping Systems, Fire Protection & Water Infrastructure Solutions Since 1984.
+CTA:
+
+2
+
+Explore Our Expertise
+SECONDARY CTA:
+View Projects
+==================================================== SECTION 02 TRUST METRICS
+====================================================
+LABEL:
+OUR IMPACT
+METRICS:
+40+ Years Of Experience
+100+ Industrial Projects
+1000+ Systems Installed
+Pan India Project Execution
+BOTTOM COPY:
+Trusted by industries, institutions, contractors, and infrastructure partners for delivering critical
+engineering solutions with precision and reliability.
+==================================================== SECTION 03 ABOUT PARNAMI
+====================================================
+LABEL:
+ABOUT US
+HEADLINE:
+Building Critical Infrastructure Through Engineering Excellence
+BODY:
+Founded in 1984, Parnami Pump & Project Pvt. Ltd. has grown into a trusted name in industrial
+plumbing, piping systems, fire protection infrastructure, and water management solutions.
+For decades, we have partnered with industries, institutions, contractors, and developers to design and
+execute complex engineering systems that support essential operations.
+From industrial piping networks to large-scale water infrastructure projects, our focus remains on
+quality, precision, reliability, and long-term performance.
+
+3
+
+==================================================== SECTION 04 LEGACY TIMELINE
+====================================================
+LABEL:
+OUR JOURNEY
+1984
+Foundation
+Established as a company focused on industrial water systems, pumping infrastructure, and
+engineering services.
+1990s
+Industrial Expansion
+Expanded operations into large-scale industrial plumbing and piping projects across multiple sectors.
+2000s
+Infrastructure Growth
+Executed major industrial, institutional, and commercial infrastructure projects.
+TODAY
+Engineering Partner
+Recognized as a trusted engineering and project execution partner across India.
+==================================================== SECTION 05 CORE SERVICES
+====================================================
+LABEL:
+WHAT WE DO
+HEADLINE:
+Integrated Engineering Solutions
+SERVICE 01
+Industrial Plumbing
+Complete industrial plumbing systems designed for operational efficiency and long-term reliability.
+
+4
+
+SERVICE 02
+Industrial Piping
+High-performance piping solutions engineered for industrial environments and critical infrastructure.
+SERVICE 03
+Piping Projects
+End-to-end project execution including planning, fabrication, installation, testing, and commissioning.
+SERVICE 04
+Fire Hydrant Systems
+Advanced fire protection infrastructure designed to meet safety and compliance standards.
+SERVICE 05
+Water Management Systems
+Solutions focused on efficient water distribution, conservation, and operational sustainability.
+SERVICE 06
+Fabrication & Engineering Support
+Precision fabrication capabilities supporting industrial and infrastructure projects.
+==================================================== SECTION 06 ENGINEERING
+CAPABILITIES ====================================================
+LABEL:
+CAPABILITIES
+HEADLINE:
+Designed For Performance. Built For Scale.
+POINTS:
+• Industrial Water Distribution Systems
+• Fire Fighting Infrastructure
+• Pumping Stations
+• Mechanical Piping Networks
+• Water Supply Schemes
+• Process Piping Systems
+
+5
+
+• Fabrication Solutions
+• Industrial Utilities Infrastructure
+==================================================== SECTION 07 PROJECT EXPERIENCE
+====================================================
+LABEL:
+PROJECTS
+HEADLINE:
+Engineering Solutions Delivered Across Industries
+DESCRIPTION:
+Our expertise spans manufacturing facilities, automotive plants, educational institutions, industrial
+developments, commercial infrastructure, and large-scale engineering projects.
+INDUSTRIES:
+• Automotive
+• Manufacturing
+• Industrial Facilities
+• Educational Institutions
+• Commercial Developments
+• Infrastructure Projects
+==================================================== SECTION 08 CLIENTS SECTION
+====================================================
+LABEL:
+TRUSTED BY
+HEADLINE:
+Built With Industry Leaders
+CLIENTS FROM EXISTING WEBSITE:
+SMCC Construction India Limited
+MAEDA Corporation
+TAISEI Corporation
+Shimizu Corporation
+Larsen & Toubro
+
+6
+
+METSO Mineral India Pvt Ltd
+Manav Rachna International University
+Yamaha Motors India Pvt Ltd
+Honda Motorcycles & Scooters India Ltd
+Honda Cars India Ltd
+Escorts Agri Machinery
+GE Motors
+Musashi Auto Parts
+JCB India Ltd
+Shahi Export House
+Use interactive logo wall.
+Avoid static logo grids.
+==================================================== SECTION 09 PROCESS
+====================================================
+LABEL:
+HOW WE WORK
+HEADLINE:
+Engineering Precision At Every Stage
+STEP 01
+Consultation & Site Assessment
+STEP 02
+System Planning & Design
+STEP 03
+Engineering & Fabrication
+STEP 04
+
+7
+
+Execution & Installation
+STEP 05
+Testing & Commissioning
+STEP 06
+Long-Term Support
+==================================================== SECTION 10 WHY CHOOSE PARNAMI
+====================================================
+HEADLINE:
+Why Industries Trust Parnami
+POINTS:
+Decades Of Engineering Expertise
+Reliable Project Delivery
+Technical Excellence
+Experienced Engineering Teams
+Industry-Compliant Systems
+Commitment To Quality
+Pan India Project Capability
+Long-Term Client Relationships
+==================================================== SECTION 11 LEADERSHIP
+====================================================
+HEADLINE:
+Leadership Driven By Vision & Experience
+SATISH PARNAMI
+Leading the company with a strong foundation in engineering excellence, quality execution, and longterm client trust.
+==================================================== SECTION 12 CONTACT CTA
+====================================================
+
+8
+
+HEADLINE:
+Let's Build Infrastructure That Performs
+BODY:
+Whether you're planning a new facility, upgrading an existing system, or executing a large-scale
+engineering project, our team is ready to deliver solutions built around performance and reliability.
+CTA:
+Start A Project Discussion
+==================================================== SECTION 13 FOOTER
+====================================================
+COMPANY
+About Us
+Services
+Projects
+Clients
+Contact
+SERVICES
+Industrial Plumbing
+Industrial Piping
+Piping Projects
+Fire Hydrant Systems
+Water Infrastructure
+Engineering Solutions
+CONTACT
+Parnami Pump & Project Pvt. Ltd.
+Faridabad, Haryana
+Phone Numbers
+
+9
+
+Email
+Business Hours
+BOTTOM TEXT
+© Parnami Pump & Project Pvt. Ltd.
+Engineering Water Infrastructure Since 1984.
+==================================================== DESIGN IMPLEMENTATION NOTES
+====================================================
+The website should feel like a cinematic engineering documentary.
+Use:
+• Flowing water simulations
+• Three.js particle systems
+• Pipeline-inspired motion graphics
+• Technical grid overlays
+• Blueprint transitions
+• Industrial materials
+• Steel textures
+• Glassmorphism UI
+• Premium dark theme
+Visual References:
+• Industrial architecture
+• Pump systems
+• Mechanical engineering
+• Water infrastructure
+• Fire protection systems
+• Technical schematics
+• Engineering precision
+Avoid:
+• Corporate template designs
+• Generic construction aesthetics
+• Overuse of stock imagery
+• Basic service cards
+• Outdated industrial website patterns
+The final experience should communicate trust, scale, engineering capability, and infrastructure
+expertise through immersive storytelling and premium interaction design.
+
+10
+
+
