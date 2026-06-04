@@ -8,7 +8,6 @@ import Lenis from "lenis";
 import {
   ArrowUpRight,
   Check,
-  ChevronRight,
   Menu,
   X,
 } from "lucide-react";
@@ -31,13 +30,107 @@ const timeline = [
   ["TODAY", "Engineering Partner", "Recognized as a trusted engineering and project execution partner across India."],
 ];
 
-const services = [
-  ["01", "Industrial Plumbing", "Complete industrial plumbing systems designed for operational efficiency and long-term reliability.", "/assets/services/industrial-plumbing(HD).png"],
-  ["02", "Industrial Piping", "High-performance piping solutions engineered for industrial environments and critical infrastructure.", "/assets/services/industrial-piping.jpg"],
-  ["03", "Piping Projects", "End-to-end project execution including planning, fabrication, installation, testing, and commissioning.", "/assets/pipingwork.png"],
-  ["04", "Fire Hydrant Systems", "Advanced fire protection infrastructure designed to meet safety and compliance standards.", "/assets/services/fire_fighting_system.jpg"],
-  ["05", "Water Management Systems", "Solutions focused on efficient water distribution, conservation, and operational sustainability.", "/assets/services/rain_water_harvesting.jpg"],
-  ["06", "Fabrication & Engineering Support", "Precision fabrication capabilities supporting industrial and infrastructure projects.", "/assets/bluepipes.png"],
+const serviceCategories = [
+  {
+    number: "01",
+    title: "Fire Fighting Services",
+    description: "Advanced fire protection infrastructure and pumping systems engineered to meet stringent safety and regulatory compliance standards.",
+    subServices: [
+      { name: "Fire Hydrant Piping", image: "/assets/images/fire-hydrant-piping.webp" },
+      { name: "Hydrant & FHR Systems", image: "/assets/images/fire-hydrant-fhr.webp" },
+      { name: "Hydrant Pumping Stations", image: "/assets/images/fire-hydrant-pumping.png" },
+      { name: "Fire Panel Integration", image: "/assets/images/fire-panel.jpg" },
+      { name: "Automatic Sprinkler Systems", image: "/assets/images/fire-sprinklers.webp" },
+      { name: "Fire Water Curtain Systems", image: "/assets/images/fire-water-curtain.jpg" },
+      { name: "Gas Flooding Systems", image: "/assets/images/gas-flooding-system.jpg" },
+    ]
+  },
+  {
+    number: "02",
+    title: "HSD Storage & Distribution",
+    description: "Secure, high-capacity High-Speed Diesel storage and pumping facilities designed for industrial utilities and power backup.",
+    subServices: [
+      { name: "Underground HSD Storage Tanks", image: "/assets/images/underground-hsd-storage-tank.png" },
+      { name: "HSD Storage Yards", image: "/assets/images/hsd-storage-yard.png" },
+      { name: "HSD Pumping Stations", image: "/assets/images/hsd-pumping-station.png" },
+      { name: "HSD Service Tanks", image: "/assets/images/hsd-service-tank.png" },
+    ]
+  },
+  {
+    number: "03",
+    title: "Utility Services",
+    description: "Comprehensive utility support including compressed air, cooling tower, water supply, and processed water networks.",
+    subServices: [
+      { name: "Compressed Air Systems", image: "/assets/images/compressed-air-system.png" },
+      { name: "Water Supply Systems", image: "/assets/images/water-supply-system.jpg" },
+      { name: "Cooling Towers", image: "/assets/images/cooling-tower.png" },
+      { name: "RO Water Processing Systems", image: "/assets/images/ro-water-processing-system.png" },
+      { name: "Chilled Water Distribution Piping", image: "/assets/images/chilled-water-distribution-piping.png" },
+    ]
+  },
+  {
+    number: "04",
+    title: "Gas Distribution & Leak Detection",
+    description: "Safe gas regulation and distribution networks paired with advanced sensor systems for real-time hazard detection.",
+    subServices: [
+      { name: "Gas Pressure Regulating Stations", image: "/assets/images/gas-pressure-regulating-station.jpg" },
+      { name: "LPG, Oxygen & Utility Piping", image: "/assets/images/air-water-nitrogen-lpg-distribution-piping.png" },
+      { name: "Gas Leak Detection Systems", image: "/assets/images/gas-detector.png" },
+    ]
+  },
+  {
+    number: "05",
+    title: "Steam & Hot Water Services",
+    description: "High-pressure steam piping, distribution headers, and commercial hot water generators built for heavy duty utilities.",
+    subServices: [
+      { name: "Steam Distribution Piping", image: "/assets/images/steam-distribution-piping.webp" },
+      { name: "Steam Distribution Headers", image: "/assets/images/steam-distribution-header.png" },
+      { name: "Hot Water Generators", image: "/assets/images/hot-water-generator.png" },
+    ]
+  },
+  {
+    number: "06",
+    title: "Boring & Rainwater Harvesting (RWH)",
+    description: "Turnkey tube-well development and ecological rainwater harvesting systems to secure sustainable water supplies.",
+    subServices: [
+      { name: "Tubewell & DTH Boring Services", image: "/assets/images/dth-boring.png" },
+      { name: "Rainwater Harvesting Systems", image: "/assets/images/rain-water-harvesting.jpg" },
+    ]
+  },
+  {
+    number: "07",
+    title: "Fabrication Services",
+    description: "High-precision fabrication of stainless steel enclosures, safety wash systems, and structural architectural railings.",
+    subServices: [
+      { name: "SS Safety Wash Enclosures", image: "/assets/images/ss-safety-wash-enclosures.png" },
+      { name: "SS Architectural Railings", image: "/assets/images/ss-railing.png" },
+    ]
+  },
+  {
+    number: "08",
+    title: "Industrial Plumbing & Finishing",
+    description: "Turnkey execution of institutional washrooms, hand-wash sections, pantry setups, reception lobbies, and corporate dining facilities.",
+    subServices: [
+      { name: "Institutional Toilets & Cubicles", image: "/assets/images/hand-wash-urinals-cubicles.png" },
+      { name: "Pantry Sinks & Cabinets", image: "/assets/images/pantry-sinks-cabinets.jpg" },
+      { name: "Industrial Finishing Works", image: "/assets/images/industrial-finishing.jpg" },
+      { name: "Reception Lobby Entries", image: "/assets/images/reception-entries.webp" },
+      { name: "Executive Dining Facilities", image: "/assets/images/executive-dining.jpg" },
+    ]
+  },
+  {
+    number: "09",
+    title: "Trading & Retail (Parnami Sales)",
+    description: "Premium distribution of high-end sanitaryware, automated faucets, geysers, doors, windows, and luxury floor tiles.",
+    subServices: [
+      { name: "Kohler Premium Faucets & Chinaware", image: "/assets/images/kohler.jpg" },
+      { name: "TOTO Luxury Bath Systems", image: "/assets/images/toto.jpg" },
+      { name: "Jaquar Geysers, Lights & Showers", image: "/assets/images/jaquar.png" },
+      { name: "Hindware Sanitary Products", image: "/assets/images/hindware.png" },
+      { name: "Fenesta Premium Doors & Windows", image: "/assets/images/fenesta-doors-windows.jpg" },
+      { name: "Designer Wall & Floor Tiles", image: "/assets/images/designer-tiles.webp" },
+    ]
+  }
 ];
 
 const capabilities = [
@@ -51,11 +144,24 @@ const capabilities = [
   "Industrial Utilities Infrastructure",
 ];
 
-const projectScenes = [
-  ["01", "Automotive", "Industrial Facilities", "/assets/services/industrial-piping.jpg"],
-  ["02", "Manufacturing", "Mechanical Piping Networks", "/assets/pipingwork.png"],
-  ["03", "Infrastructure", "Fire Fighting Infrastructure", "/assets/services/fire_fighting_system.jpg"],
-  ["04", "Water Management", "Water Supply Schemes", "/assets/services/rain_water_harvesting.jpg"],
+const recentProjects = [
+  { client: "M/s CINDA Engineering ECO Technology Pvt. Ltd.", location: "Pan-India", scope: "Industrial Piping & Utility Systems" },
+  { client: "M/s Escorts Limited", location: "Faridabad (Plot No 1, 2 & 3)", scope: "Fire Fighting & Utility Piping" },
+  { client: "M/s Tadano Escorts India Pvt. Ltd.", location: "Faridabad, Haryana", scope: "Process Piping & Pumping Stations" },
+  { client: "M/s Nanliu Manufacturing India Limited", location: "Industrial Facility", scope: "Mechanical Utility Infrastructure" },
+  { client: "M/s Escorts Kubota India Private Limited", location: "Faridabad, Haryana", scope: "Piping & Fire Protection Services" },
+  { client: "M/s Y-Tec India Pvt. Ltd.", location: "Industrial Zone", scope: "Utility Distribution Piping" },
+  { client: "M/s Mitsui Kinzoku Components India Pvt. Ltd.", location: "Bawal, Haryana", scope: "Industrial Piping & Fire Fighting" },
+  { client: "M/s Denso Haryana India Pvt. Ltd.", location: "Manesar, Haryana", scope: "Plant Utilities & Piping Systems" },
+  { client: "M/s Keihin India Manufacturing Pvt. Ltd.", location: "Bawal, Haryana", scope: "Mechanical Utility Piping" },
+  { client: "Honda Motocycles and Scooters India Limited", location: "Tapukara, Rajasthan", scope: "Industrial Utility Installations" },
+  { client: "Honda cars India Limited", location: "Tapukara & Greater Noida", scope: "Fire Fighting Infrastructure" },
+  { client: "HMI Warehouse", location: "Tapukara, Rajasthan", scope: "Fire Hydrant & Sprinkler Systems" },
+  { client: "Yamaha Motors India", location: "Chennai, Tamil Nadu", scope: "Industrial Piping & Utility Systems" },
+  { client: "Honda Motorcycles and Scooters India Ltd.", location: "Vithilapur, Gujarat", scope: "Piping & Fire Hydrant System" },
+  { client: "Techno Trends Auto Park", location: "Vithilapur, Gujarat", scope: "Industrial Facilities & Utilities" },
+  { client: "Hilex India Pvt. Limited", location: "Sanand, Gujarat", scope: "Piping Networks & Utility System" },
+  { client: "M/s Sumitomo Corporation (Tyre Wheel Project)", location: "Maruti Complex, Bacheraji, Gujarat", scope: "Turnkey Piping & Fire Protection" }
 ];
 
 const clients = [
@@ -122,8 +228,9 @@ const reasons = [
 
 const nav = [
   ["About", "#about"],
-  ["Expertise", "#services"],
+  ["Services", "#services"],
   ["Projects", "#projects"],
+  ["Leadership", "#leadership"],
   ["Process", "#process"],
   ["Contact", "#contact"],
 ];
@@ -140,6 +247,7 @@ function HeroCanvas() {
   const canvas = useRef<HTMLCanvasElement>(null);
   const section = useRef<HTMLElement>(null);
   const progressBar = useRef<HTMLElement>(null);
+  const overlay = useRef<HTMLDivElement>(null);
   const images = useRef<HTMLImageElement[]>([]);
 
   useEffect(() => {
@@ -194,6 +302,23 @@ function HeroCanvas() {
         raf = requestAnimationFrame(render);
       },
     });
+
+    if (overlay.current) {
+      gsap.fromTo(overlay.current,
+        { opacity: 1, y: 0 },
+        {
+          opacity: 0,
+          y: -50,
+          scrollTrigger: {
+            trigger: wrap,
+            start: "top top",
+            end: "top -18%",
+            scrub: true,
+          }
+        }
+      );
+    }
+
     addEventListener("resize", resize);
     return () => {
       trigger.kill();
@@ -209,6 +334,30 @@ function HeroCanvas() {
         <canvas ref={canvas} className="hero-canvas" aria-label="Industrial infrastructure sequence" />
         <div className="hero-shade" />
         <div className="blueprint-grid" />
+        
+        <div ref={overlay} className="hero-content-overlay">
+          <div className="hero-text-group">
+            <div className="hero-technical-specs">
+              <span>SYS.LOC // IN-HR-FBD</span>
+              <span>EST. 1984</span>
+            </div>
+            <h1 className="hero-title">
+              Engineering The Flow <em>Behind Modern Infrastructure</em>
+            </h1>
+            <p className="hero-subtitle">
+              Industrial Piping, Fire Protection &amp; Water Infrastructure Solutions Since 1984.
+            </p>
+          </div>
+          <div className="hero-actions">
+            <a href="#services" className="hero-btn primary-btn">
+              Explore Our Expertise
+            </a>
+            <a href="#projects" className="hero-btn secondary-btn">
+              View Projects
+            </a>
+          </div>
+        </div>
+
         <div className="hero-progress" aria-hidden="true"><i ref={progressBar} /></div>
       </div>
     </section>
@@ -302,6 +451,7 @@ function Cursor() {
 
 
 export default function Home() {
+  const [activeService, setActiveService] = useState(0);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -317,7 +467,6 @@ export default function Home() {
     if (!reduce && desktop) {
       gsap.to(".timeline-track", { xPercent: -50, ease: "none", scrollTrigger: { trigger: ".journey", start: "top top", end: "+=2200", scrub: 0.7, pin: true } });
       gsap.fromTo(".timeline-route span", { width: "0%" }, { width: "100%", ease: "none", scrollTrigger: { trigger: ".journey", start: "top top", end: "+=2200", scrub: 0.7 } });
-      gsap.to(".project-track", { xPercent: -75, ease: "none", scrollTrigger: { trigger: ".projects", start: "top top", end: "+=3200", scrub: 0.7, pin: true } });
       gsap.utils.toArray<HTMLElement>(".parallax-img").forEach((el) => gsap.fromTo(el, { scale: 1.12, xPercent: -4 }, { scale: 1.02, xPercent: 4, ease: "none", scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true } }));
       ScrollTrigger.create({ start: 0, end: "max", onUpdate: (self) => gsap.to(".section-title h2", { skewY: gsap.utils.clamp(-1.2, 1.2, self.getVelocity() / -1800), duration: 0.35, overwrite: true }) });
     }
@@ -407,7 +556,7 @@ export default function Home() {
 
         <section className="about section-grid" id="about">
           <div className="section-wipe" />
-          <div className="about-visual reveal reactive"><Image className="parallax-img" src="/parnami.png" fill alt="Industrial piping network" sizes="(max-width: 800px) 100vw, 52vw" /><div className="technical-frame"><i /><i /><i /><i /></div><div className="visual-index">01 <span>/ ABOUT</span></div></div>
+          <div className="about-visual reveal reactive"><Image className="parallax-img" src="/assets/images/about-us.webp" fill alt="Industrial piping network" sizes="(max-width: 800px) 100vw, 52vw" /><div className="technical-frame"><i /><i /><i /><i /></div><div className="visual-index">01 <span>/ ABOUT</span></div></div>
           <div className="about-copy reveal"><Label>About Us</Label><h2>Building Critical Infrastructure <em>Through Engineering Excellence</em></h2><p>Founded in 1984, Parnami Pump &amp; Project Pvt. Ltd. has grown into a trusted name in industrial plumbing, piping systems, fire protection infrastructure, and water management solutions.</p><p>For decades, we have partnered with industries, institutions, contractors, and developers to design and execute complex engineering systems that support essential operations.</p><p>From industrial piping networks to large-scale water infrastructure projects, our focus remains on quality, precision, reliability, and long-term performance.</p></div>
         </section>
 
@@ -433,7 +582,50 @@ export default function Home() {
         <section className="services" id="services">
           <div className="section-wipe" />
           <div className="section-title reveal"><Label>What We Do</Label><h2>Integrated <em>Engineering Solutions</em></h2></div>
-          <div className="service-grid">{services.map(([number, title, text, image]) => <article className="service-card reveal reactive" key={number}><Image className="parallax-img" src={image} fill alt="" sizes="(max-width: 800px) 100vw, 50vw" /><div className="service-shade" /><div className="service-scan" /><span>{number}</span><div><h3>{title}</h3><p>{text}</p><ChevronRight /></div></article>)}</div>
+          
+          <div className="services-dashboard">
+            <div className="services-tabs-container">
+              <div className="services-nav">
+                {serviceCategories.map((category, idx) => (
+                  <button
+                    key={category.number}
+                    className={`service-tab-btn ${idx === activeService ? 'active' : ''}`}
+                    onClick={() => setActiveService(idx)}
+                    onMouseEnter={() => setActiveService(idx)}
+                  >
+                    <span className="tab-number">{category.number}</span>
+                    <span className="tab-title">{category.title}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+            
+            <div className="service-details-panel">
+              <div className="service-details-header">
+                <h3>{serviceCategories[activeService].title}</h3>
+                <p>{serviceCategories[activeService].description}</p>
+              </div>
+              
+              <div className="service-subservices-grid">
+                {serviceCategories[activeService].subServices.map((sub) => (
+                  <article className="subservice-card reveal reactive" key={sub.name}>
+                    <div className="subservice-img-wrapper">
+                      <Image 
+                        className="subservice-img" 
+                        src={sub.image} 
+                        fill 
+                        alt={sub.name} 
+                        sizes="(max-width: 800px) 100vw, 30vw" 
+                      />
+                    </div>
+                    <div className="subservice-info">
+                      <h4>{sub.name}</h4>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="capabilities section-grid">
@@ -444,9 +636,57 @@ export default function Home() {
 
         <section className="projects" id="projects">
           <div className="section-wipe" />
-          <div className="project-intro"><Label>Projects</Label><h2>Engineering Solutions Delivered <em>Across Industries</em></h2><p>Our expertise spans manufacturing facilities, automotive plants, educational institutions, industrial developments, commercial infrastructure, and large-scale engineering projects.</p></div>
-          <div className="project-track">{projectScenes.map(([number, industry, system, image]) => <article className="project-scene reactive" key={number}><Image className="parallax-img" src={image} fill alt="" sizes="85vw" /><div className="project-scene-shade" /><div className="project-meta"><span>{number} / 04</span><h3>{industry}</h3><p>{system}</p></div></article>)}</div>
-
+          
+          <div className="projects-dashboard">
+            <div className="projects-header reveal">
+              <Label>Recent Projects</Label>
+              <h2>Engineering Executed <em>With Precision</em></h2>
+              <p>
+                Delivering high-performance utility piping, fire protection infrastructure, 
+                and turnkey mechanical engineering installations for global automotive and industrial leaders.
+              </p>
+              
+              <div className="projects-telemetry-panel">
+                <div className="telemetry-stat">
+                  <span className="stat-num">17+</span>
+                  <span className="stat-label">Major Facilities</span>
+                </div>
+                <div className="telemetry-stat">
+                  <span className="stat-num">04</span>
+                  <span className="stat-label">States Covered</span>
+                </div>
+                <div className="telemetry-stat">
+                  <span className="stat-num">100%</span>
+                  <span className="stat-label">Quality Audits Passed</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="projects-log-container reveal">
+              <div className="projects-log-header">
+                <span>{`// LOG_ID`}</span>
+                <span>CLIENT / PROJECT DEPLOYMENT</span>
+                <span>LOCATION</span>
+              </div>
+              <div className="projects-log-list" data-lenis-prevent>
+                {recentProjects.map((proj, idx) => (
+                  <div className="project-log-item" key={idx}>
+                    <div className="project-log-index">
+                      <span className="active-dot" />
+                      PRJ-{String(idx + 1).padStart(2, "0")}
+                    </div>
+                    <div className="project-log-main">
+                      <h4>{proj.client}</h4>
+                      <p>{proj.scope}</p>
+                    </div>
+                    <div className="project-log-location">
+                      {proj.location}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="clients" id="clients">
@@ -517,21 +757,97 @@ export default function Home() {
           <div className="why-grid">{reasons.map((reason) => <div className="why-card reveal reactive" key={reason}><Check size={16} /><span>{reason}</span></div>)}</div>
         </section>
 
-        <section className="leadership section-grid">
+        <section className="leadership" id="leadership">
           <div className="section-wipe" />
-          <div className="leader-img reveal"><Image src="/assets/founder(hd).png" fill alt="Satish Parnami" sizes="(max-width: 800px) 100vw, 38vw" /></div>
-          <div className="leader-copy reveal"><Label>Leadership</Label><h2>Leadership Driven By <em>Vision &amp; Experience</em></h2><h3>SATISH PARNAMI</h3><p>Leading the company with a strong foundation in engineering excellence, quality execution, and long-term client trust.</p></div>
+          <div className="section-title reveal"><Label>Leadership</Label><h2>Leadership Driven By <em>Vision &amp; Experience</em></h2></div>
+          
+          <div className="leader-grid">
+            <article className="leader-card reveal">
+              <div className="leader-img-wrapper">
+                <Image src="/assets/founder(hd).png" fill alt="Satish Parnami" sizes="(max-width: 800px) 100vw, 30vw" />
+                <div className="technical-frame"><i /><i /><i /><i /></div>
+              </div>
+              <div className="leader-info">
+                <h3>SATISH PARNAMI</h3>
+                <span className="leader-role">Managing Director</span>
+                <p>Leading the company with a strong foundation in engineering excellence, quality execution, and long-term client trust. Graduated from Rajasthan University, established the water supply and tubewell development business over 40 years ago.</p>
+              </div>
+            </article>
+
+            <article className="leader-card reveal">
+              <div className="leader-img-wrapper">
+                <Image src="/assets/images/yr-pasrija.jpg" fill alt="Y.R. Pasrija" sizes="(max-width: 800px) 100vw, 30vw" />
+                <div className="technical-frame"><i /><i /><i /><i /></div>
+              </div>
+              <div className="leader-info">
+                <h3>Y.R. PASRIJA</h3>
+                <span className="leader-role">General Manager</span>
+                <p>Mechanical Engineering graduate with specialized training in Japan. Bringing over 50 years of industry experience and leading the project team at Parnami for the past 20 years.</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section className="contact" id="contact">
-          <div className="section-wipe" /><div className="blueprint-grid" /><div className="contact-orbit"><i /><i /><i /></div><div className="contact-inner reveal"><Label>Start A Conversation</Label><h2>Let&apos;s Build Infrastructure <em>That Performs</em></h2><p>Whether you&apos;re planning a new facility, upgrading an existing system, or executing a large-scale engineering project, our team is ready to deliver solutions built around performance and reliability.</p><ArrowLink light>Start A Project Discussion</ArrowLink></div>
+          <div className="section-wipe" />
+          <div className="blueprint-grid" />
+          <div className="contact-orbit"><i /><i /><i /></div>
+          
+          <div className="contact-grid">
+            <div className="contact-inner reveal">
+              <Label>Start A Conversation</Label>
+              <h2>Let&apos;s Build Infrastructure <em>That Performs</em></h2>
+              <p>Whether you&apos;re planning a new facility, upgrading an existing system, or executing a large-scale engineering project, our team is ready to deliver solutions built around performance and reliability.</p>
+              <ArrowLink light>Start A Project Discussion</ArrowLink>
+            </div>
+            
+            <div className="contact-details reveal">
+              <div className="contact-block">
+                <h3>Headquarters &amp; Project Office</h3>
+                <p>Parnami Pump &amp; Project PVT. LTD.<br />1E-1, Opposite Geeta Mandir,<br />N.I.T. Faridabad - 121001, Haryana</p>
+              </div>
+              <div className="contact-block">
+                <h3>Showroom (Parnami Sales Corp.)</h3>
+                <p>Shop No. 4 &amp; 5, New Shopping Centre,<br />Tikona Park, N.I.T. Faridabad - 121001</p>
+              </div>
+              <div className="contact-block">
+                <h3>Get In Touch</h3>
+                <p>
+                  <strong>Phone:</strong> (0129) 4023268, 2417222<br />
+                  <strong>Project Email:</strong> project@parnamipump.com<br />
+                  <strong>Sales Email:</strong> parnamisales@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
+      
       <footer>
-        <div><Image src="/assets/logo.png" alt="Parnami Pump & Project Pvt. Ltd." width={173} height={53} /><p>Engineering Water Infrastructure Since 1984.</p></div>
-        <div><b>COMPANY</b><a href="#about">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
-        <div><b>SERVICES</b><a href="#services">Industrial Plumbing</a><a href="#services">Industrial Piping</a><a href="#services">Fire Hydrant Systems</a><a href="#services">Engineering Solutions</a></div>
-        <div><b>CONTACT</b><p>Parnami Pump &amp; Project Pvt. Ltd.<br />Faridabad, Haryana</p></div>
+        <div className="footer-brand">
+          <Image src="/assets/logo.png" alt="Parnami Pump & Project Pvt. Ltd." width={173} height={53} />
+          <p>Engineering Water Infrastructure Since 1984.</p>
+        </div>
+        <div>
+          <b>COMPANY</b>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <b>SERVICES</b>
+          <a href="#services">Fire Fighting Services</a>
+          <a href="#services">HSD Storage &amp; Distribution</a>
+          <a href="#services">Utility Services</a>
+          <a href="#services">Gas Distribution</a>
+          <a href="#services">Trading &amp; Retail</a>
+        </div>
+        <div>
+          <b>CONTACT</b>
+          <p>Parnami Pump &amp; Project Pvt. Ltd.<br />Faridabad, Haryana</p>
+        </div>
         <div className="footer-bottom">
           <small>© Parnami Pump &amp; Project Pvt. Ltd.</small>
           <div className="footer-credits">
