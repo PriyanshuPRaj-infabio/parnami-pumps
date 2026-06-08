@@ -14,7 +14,7 @@ import {
 
 const FRAME_COUNT = 290;
 const frameSrc = (index: number) =>
-  `/hero-sequence/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
+  `/hero-sequence-new/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
 
 const metrics = [
   ["40+", "Years Of Experience"],
